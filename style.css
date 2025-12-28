@@ -1,0 +1,75 @@
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.fejlec{
+    text-align: center;
+    margin-top: -8px;
+    margin-left:-8px;
+    margin-right:-8px;
+    padding-bottom: 30px;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+a:hover{
+    transition: background-color 0.5s , color 0.5s ;
+    background-color: black;
+    color: cyan;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dropdown{
+    display: none;
+}
+a:hover .dropdown,
+.item:focus-within .dropdown{
+    display:block
+}
+.item{
+    padding-left: 2%;
+    padding-top:20px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+    transition: transform 0.2s ease;
+}
+.parent:hover{
+    transform: translateY(5px);
+}
+
+.div1 { 
+    grid-area: 2 / 1 / 5 / 6; 
+    min-width: 300px;
+    margin-top: -6%;
+    font-size: 20px;
+}
+img{
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+h3{
+    text-align: center;
+}
